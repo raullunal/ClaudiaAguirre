@@ -1,147 +1,379 @@
-
-<!doctype html>
-<html lang="es">
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>Claudia Aguirre — Especialista en E-learning</title>
-<link rel="icon" href="assets/images/img_1_78.png" />
-<style>
-:root{--bg:#f7f9fb;--card:#ffffff;--accent:#1f2937;--muted:#6b7280;--primary:#0f62fe;}
-*{box-sizing:border-box}
-body{margin:0;font-family:Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; background:linear-gradient(180deg, var(--bg), #ffffff);color:var(--accent);-webkit-font-smoothing:antialiased}
-.container{max-width:1100px;margin:48px auto;padding:24px}
-.header{display:flex;gap:24px;align-items:center}
-.avatar{width:120px;height:120px;border-radius:16px;overflow:hidden;flex:0 0 120px;box-shadow:0 8px 30px rgba(15,22,40,0.08)}
-.avatar img{width:100%;height:100%;object-fit:cover;display:block}
-.header-info h1{margin:0;font-size:28px;letter-spacing:-0.5px}
-.header-info p{margin:6px 0 0;color:var(--muted);}
-.cta{margin-top:12px}
-.btn-primary{background:var(--primary);color:white;padding:10px 16px;border-radius:10px;text-decoration:none;font-weight:600;box-shadow:0 6px 20px rgba(15,98,254,0.14)}
-.card{background:var(--card);border-radius:14px;padding:22px;box-shadow:0 6px 24px rgba(15,22,40,0.04);margin-top:20px}
-.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
-@media(max-width:900px){.grid{grid-template-columns:repeat(2,1fr)}.header{flex-direction:column;align-items:flex-start}.avatar{width:96px;height:96px}}
-@media(max-width:600px){.grid{grid-template-columns:1fr}}
-
-.section-title{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px}
-.stat{display:flex;flex-direction:column;padding:14px;border-radius:10px;background:linear-gradient(180deg,#fbfdff,#f7fbff);text-align:center}
-.stat strong{font-size:20px}
-.lead{color:var(--muted);line-height:1.6}
-
-/* Services list */
-.services{display:flex;flex-direction:column;gap:10px;margin-top:10px}
-.service-item{display:flex;gap:12px;align-items:flex-start}
-.service-item .icon{width:46px;height:46;border-radius:10px;background:#eef4ff;display:flex;align-items:center;justify-content:center;font-weight:700;color:var(--primary)}
-
-/* Logos */
-.logos{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
-.logo{background:linear-gradient(180deg,#fff,#fafbff);padding:10px;border-radius:8px;box-shadow:0 6px 18px rgba(15,22,40,0.03);display:flex;align-items:center;justify-content:center;min-width:110px;height:60px}
-.logo img{max-height:40px;max-width:100%}
-
-/* Gallery */
-.gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:12px}
-@media(max-width:900px){.gallery{grid-template-columns:repeat(2,1fr)}}
-.gallery img{width:100%;height:120px;object-fit:cover;border-radius:8px;box-shadow:0 8px 30px rgba(15,22,40,0.04)}
-
-/* Contact form */
-.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
-@media(max-width:700px){.form-grid{grid-template-columns:1fr}}
-.input, textarea{width:100%;padding:12px;border-radius:8px;border:1px solid #e6e9ef;font-size:15px;outline:none}
-textarea{min-height:120px;resize:vertical}
-.form-note{font-size:13px;color:var(--muted);margin-top:8px}
-
-/* footer */
-.footer{margin-top:28px;text-align:center;color:var(--muted);font-size:14px;padding:20px 0}
-
-/* subtle animations */
-.fade-up{transform:translateY(6px);opacity:0;animation:fadeUp .6s ease forwards}
-@keyframes fadeUp{to{transform:none;opacity:1}}
-
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Claudia Aguirre | Especialista en E-learning</title>
+    <meta name="description" content="Portafolio y servicios de Claudia Aguirre, especialista en E-learning con más de 20 años de experiencia en formación virtual y capacitación corporativa.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Merriweather:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3, h4 { font-family: 'Inter', sans-serif; }
+        .gradient-bg { background: linear-gradient(135deg, #2563eb 0%, #1e40af 100%); }
+        .card-hover:hover { transform: translateY(-5px); box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04); }
+    </style>
 </head>
-<body>
-<div class="container">
-  <header class="header card fade-up" style="--delay:0s">
-    <div class="avatar">
-      <img alt="Avatar" src="assets/images/img_1_78.png" />
-    </div>
-    <div class="header-info">
-      <h1>Claudia Aguirre</h1>
-      <p class="lead">Especialista en E-learning · +20 años diseñando y gestionando proyectos de formación virtual para organismos públicos, ONGs y empresas.</p>
-      <div class="cta">
-        <a class="btn-primary" href="#contact">Contratar asesoramiento</a>
-      </div>
-    </div>
-  </header>
+<body class="bg-slate-50 text-slate-800 antialiased">
 
-  <section class="card fade-up" style="--delay:0.1s">
-    <div class="section-title"><h2>Servicios</h2><span class="lead">Soluciones digitales a la medida</span></div>
-    <div class="services">
-      <div class="service-item"><div class="icon">DS</div><div><strong>Diseño estratégico y diagnóstico formativo</strong><div class="lead">Alineación de la capacitación digital con objetivos del negocio y desarrollo de talento.</div></div></div>
-      <div class="service-item"><div class="icon">PM</div><div><strong>Creación y gestión integral de proyectos e-learning</strong><div class="lead">Diseño instruccional, coordinación de equipos y despliegue de experiencias de aprendizaje efectivas.</div></div></div>
-      <div class="service-item"><div class="icon">IM</div><div><strong>Implementación y desarrollo de capacidades internas</strong><div class="lead">Formación de equipos, transferencias de gestión y acompañamiento continuo.</div></div></div>
-      <div class="service-item"><div class="icon">AE</div><div><strong>Análisis y evaluación de resultados</strong><div class="lead">Métricas, reportes y mejora continua para maximizar el valor del aprendizaje.</div></div></div>
-    </div>
-  </section>
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm fixed w-full z-50 transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <div class="flex-shrink-0 flex items-center gap-3">
+                    <div class="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold text-xl">CA</div>
+                    <span class="font-bold text-xl tracking-tight text-slate-900">Claudia Aguirre</span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#inicio" class="text-slate-600 hover:text-blue-600 font-medium transition-colors">Inicio</a>
+                    <a href="#servicios" class="text-slate-600 hover:text-blue-600 font-medium transition-colors">Servicios</a>
+                    <a href="#experiencia" class="text-slate-600 hover:text-blue-600 font-medium transition-colors">Experiencia</a>
+                    <a href="#sobre-mi" class="text-slate-600 hover:text-blue-600 font-medium transition-colors">Sobre mí</a>
+                    <a href="#contacto" class="px-5 py-2.5 rounded-full bg-blue-600 text-white font-semibold hover:bg-blue-700 transition-all shadow-md hover:shadow-lg transform hover:-translate-y-0.5">Contactar</a>
+                </div>
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-slate-600 hover:text-blue-600 focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 absolute w-full">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#inicio" class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:text-blue-600 hover:bg-slate-50">Inicio</a>
+                <a href="#servicios" class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:text-blue-600 hover:bg-slate-50">Servicios</a>
+                <a href="#experiencia" class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:text-blue-600 hover:bg-slate-50">Experiencia</a>
+                <a href="#contacto" class="block px-3 py-2 rounded-md text-base font-medium text-blue-600 font-semibold">Contactar</a>
+            </div>
+        </div>
+    </nav>
 
-  <section class="card fade-up" style="--delay:0.2s">
-    <div class="section-title"><h2>Impacto y Métricas</h2></div>
-    <div class="grid">
-      <div class="stat"><strong>+300.000</strong><span class="lead">Destinatarios: docentes, profesionales de la salud, empresarios.</span></div>
-      <div class="stat"><strong>+200</strong><span class="lead">Expertos coordinados: diseñadores, contenidistas y tutores.</span></div>
-      <div class="stat"><strong>60% - 80%</strong><span class="lead">Tasa de finalización (gratuitos y pagos).</span></div>
-    </div>
-  </section>
+    <!-- Hero Section -->
+    <section id="inicio" class="pt-28 pb-20 lg:pt-36 lg:pb-28 relative overflow-hidden">
+        <div class="absolute top-0 left-0 w-full h-full overflow-hidden -z-10">
+             <div class="absolute -top-[20%] -right-[10%] w-[50%] h-[50%] rounded-full bg-blue-100/50 blur-3xl"></div>
+             <div class="absolute top-[40%] -left-[10%] w-[40%] h-[40%] rounded-full bg-indigo-100/50 blur-3xl"></div>
+        </div>
 
-  <section class="card fade-up" style="--delay:0.3s">
-    <div class="section-title"><h2>Microaprendizajes & Píldoras</h2></div>
-    <p class="lead">Diseño de unidades breves y autogestionadas, evaluaciones finales y recursos interactivos para aumentar retención y aplicabilidad.</p>
-    <div class="grid" style="margin-top:12px">
-      <div class="stat"><strong>+50</strong><div class="lead">Píldoras diseñadas</div></div>
-      <div class="stat"><strong>+50%</strong><div class="lead">Incremento en finalización</div></div>
-      <div class="stat"><strong>Alta valoración</strong><div class="lead">Feedback positivo en calidad y navegación</div></div>
-    </div>
-  </section>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:grid lg:grid-cols-12 lg:gap-16 items-center">
+                <div class="lg:col-span-7 text-center lg:text-left mb-12 lg:mb-0">
+                    <div class="inline-flex items-center px-3 py-1 rounded-full bg-blue-50 text-blue-700 text-sm font-semibold mb-6 border border-blue-100">
+                        <span class="w-2 h-2 rounded-full bg-blue-600 mr-2"></span> Disponible para proyectos
+                    </div>
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-slate-900 leading-tight mb-6">
+                        Especialista en <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">E-learning</span> y Formación Virtual
+                    </h1>
+                    <p class="text-lg sm:text-xl text-slate-600 mb-8 leading-relaxed max-w-2xl mx-auto lg:mx-0">
+                        Más de 20 años de experiencia transformando el conocimiento en experiencias de aprendizaje efectivas. Diseño, gestión y optimización de la capacitación corporativa.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                        <a href="#servicios" class="px-8 py-4 rounded-lg bg-blue-600 text-white font-semibold text-lg hover:bg-blue-700 transition-all shadow-lg shadow-blue-600/20 text-center">
+                            Ver Servicios
+                        </a>
+                        <a href="#contacto" class="px-8 py-4 rounded-lg bg-white text-slate-700 border border-slate-300 font-semibold text-lg hover:bg-slate-50 hover:border-slate-400 transition-all text-center">
+                            Agendar Consulta
+                        </a>
+                    </div>
+                </div>
+                <div class="lg:col-span-5 relative">
+                    <!-- Placeholder for Image -->
+                    <div class="relative rounded-2xl overflow-hidden shadow-2xl border-8 border-white/50 rotate-2 hover:rotate-0 transition-transform duration-500">
+                        <!-- Replace src with actual image URL or uploaded asset -->
+                        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Claudia Aguirre - E-learning Specialist" class="w-full h-auto object-cover aspect-[4/5]">
+                        <div class="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/70 to-transparent p-6">
+                            <p class="text-white font-bold text-xl">Claudia Aguirre</p>
+                            <p class="text-blue-200">Especialista en E-learning</p>
+                        </div>
+                    </div>
+                    <!-- Floating Badge -->
+                    <div class="absolute -bottom-6 -left-6 bg-white p-4 rounded-xl shadow-xl flex items-center gap-4 animate-bounce" style="animation-duration: 3s;">
+                        <div class="bg-green-100 p-3 rounded-full text-green-600">
+                            <i class="fas fa-chart-line text-xl"></i>
+                        </div>
+                        <div>
+                            <p class="text-xs text-gray-500 font-semibold uppercase">Resultados</p>
+                            <p class="text-slate-900 font-bold">Optimización de Costos</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <section class="card fade-up" style="--delay:0.4s">
-    <div class="section-title"><h2>Clientes y proyectos destacados</h2></div>
-    <div class="logos">
-      <div class="logo"><img alt="logo1" src="assets/images/img_1_78.png" /></div>\n      <div class="logo"><img alt="logo2" src="assets/images/img_1_80.png" /></div>\n      <div class="logo"><img alt="logo3" src="assets/images/img_1_87.png" /></div>\n      <div class="logo"><img alt="logo4" src="assets/images/img_2_258.png" /></div>\n      <div class="logo"><img alt="logo5" src="assets/images/img_2_261.png" /></div>\n      <div class="logo"><img alt="logo6" src="assets/images/img_3_359.png" /></div>\n      <div class="logo"><img alt="logo7" src="assets/images/img_3_357.png" /></div>\n      <div class="logo"><img alt="logo8" src="assets/images/img_4_466.png" /></div>\n      <div class="logo"><img alt="logo9" src="assets/images/img_4_467.png" /></div>\n      <div class="logo"><img alt="logo10" src="assets/images/img_4_468.png" /></div>\n      <div class="logo"><img alt="logo11" src="assets/images/img_4_469.png" /></div>\n      <div class="logo"><img alt="logo12" src="assets/images/img_4_458.png" /></div>\n
-    </div>
-    <p class="lead" style="margin-top:12px">Proyectos con instituciones públicas, hospitales, ONGs y empresas privadas. Referencias disponibles bajo pedido.</p>
-  </section>
+    <!-- Value Proposition Section -->
+    <section class="py-16 bg-white border-y border-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <h2 class="text-3xl font-bold text-slate-900 mb-4">¿Por qué apostar al E-learning?</h2>
+                <p class="text-lg text-slate-600">
+                    En un entorno laboral en constante cambio, la capacitación virtual es el pilar fundamental para el desarrollo del talento.
+                </p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="p-6 rounded-xl bg-slate-50 border border-slate-100 text-center hover:bg-blue-50 transition-colors duration-300">
+                    <div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-lg flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-rocket text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-2">Agilidad y Escalabilidad</h3>
+                    <p class="text-slate-600">Herramientas efectivas para capacitar equipos de manera flexible y alineada con los objetivos.</p>
+                </div>
+                <div class="p-6 rounded-xl bg-slate-50 border border-slate-100 text-center hover:bg-blue-50 transition-colors duration-300">
+                    <div class="w-12 h-12 bg-indigo-100 text-indigo-600 rounded-lg flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-piggy-bank text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-2">Reducción de Costos</h3>
+                    <p class="text-slate-600">Optimiza la inversión en capacitación eliminando barreras geográficas y logísticas.</p>
+                </div>
+                <div class="p-6 rounded-xl bg-slate-50 border border-slate-100 text-center hover:bg-blue-50 transition-colors duration-300">
+                    <div class="w-12 h-12 bg-teal-100 text-teal-600 rounded-lg flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-bullseye text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-2">Adaptabilidad</h3>
+                    <p class="text-slate-600">Soluciones personalizadas que evolucionan junto con las necesidades de tu empresa.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <section class="card fade-up" style="--delay:0.5s">
-    <div class="section-title"><h2>Galería de trabajos</h2></div>
-    <div class="gallery">
-      <img alt="proyecto13" src="assets/images/img_5_617.png" />\n      <img alt="proyecto14" src="assets/images/img_5_618.png" />\n      <img alt="proyecto15" src="assets/images/img_5_609.png" />\n      <img alt="proyecto16" src="assets/images/img_6_715.png" />\n      <img alt="proyecto17" src="assets/images/img_6_716.png" />\n      <img alt="proyecto18" src="assets/images/img_6_707.png" />\n      <img alt="proyecto19" src="assets/images/img_7_176.png" />\n      <img alt="proyecto20" src="assets/images/img_7_168.png" />\n      <img alt="proyecto21" src="assets/images/img_8_814.png" />\n      <img alt="proyecto22" src="assets/images/img_8_816.png" />\n      <img alt="proyecto23" src="assets/images/img_9_6.png" />\n      <img alt="proyecto24" src="assets/images/img_9_15.png" />\n
-    </div>
-  </section>
+    <!-- Services Section -->
+    <section id="servicios" class="py-20 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-blue-600 font-semibold tracking-wide uppercase text-sm">Mis Servicios</h2>
+                <h3 class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-slate-900 sm:text-4xl">Soluciones Integrales de Formación</h3>
+            </div>
 
-  <section id="contact" class="card fade-up" style="--delay:0.6s">
-    <div class="section-title"><h2>Contacto</h2><span class="lead">Solicita un plan a medida para tu organización</span></div>
-    <form action="https://formspree.io/f/xeoneggv" method="POST">
-      <div class="form-grid">
-        <input class="input" type="text" name="name" placeholder="Nombre completo" required />
-        <input class="input" type="email" name="_replyto" placeholder="Correo electrónico" required />
-      </div>
-      <div style="margin-top:12px">
-        <input class="input" type="text" name="company" placeholder="Empresa / Institución (opcional)" />
-      </div>
-      <div style="margin-top:12px">
-        <textarea name="message" placeholder="Cuéntame sobre tu proyecto y necesidades..." required></textarea>
-      </div>
-      <div style="display:flex;gap:12px;align-items:center;margin-top:12px">
-        <button class="btn-primary" type="submit">Enviar consulta</button>
-        <div class="form-note">Enviaré respuesta detallada en 1-3 días hábiles. Reemplaza <code>yourFormID</code> por tu ID de Formspree.</div>
-      </div>
-    </form>
-    <div style="margin-top:18px" class="lead"><strong>Email:</strong> clau.ale.aguirre@gmail.com · <strong>Tel:</strong> +54 9 11 6493 2075</div>
-  </section>
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 card-hover transition-all duration-300 flex gap-4">
+                    <div class="flex-shrink-0">
+                        <div class="w-14 h-14 bg-blue-50 rounded-xl flex items-center justify-center text-blue-600">
+                            <i class="fas fa-compass text-2xl"></i>
+                        </div>
+                    </div>
+                    <div>
+                        <h4 class="text-xl font-bold text-slate-900 mb-3">Diseño Estratégico y Diagnóstico</h4>
+                        <p class="text-slate-600 leading-relaxed">Alineación de la capacitación digital con los objetivos de negocio. Detecto las necesidades reales de desarrollo del talento para crear planes efectivos.</p>
+                    </div>
+                </div>
 
-  <footer class="footer">
-    © 2025 Claudia Aguirre — Especialista en E-learning · Diseño y gestión de formación virtual
-  </footer>
-</div>
+                <!-- Service 2 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 card-hover transition-all duration-300 flex gap-4">
+                    <div class="flex-shrink-0">
+                        <div class="w-14 h-14 bg-indigo-50 rounded-xl flex items-center justify-center text-indigo-600">
+                            <i class="fas fa-laptop-code text-2xl"></i>
+                        </div>
+                    </div>
+                    <div>
+                        <h4 class="text-xl font-bold text-slate-900 mb-3">Gestión Integral de Proyectos E-learning</h4>
+                        <p class="text-slate-600 leading-relaxed">Desde el diseño instruccional innovador hasta la conducción de equipos multidisciplinarios. Creo experiencias de aprendizaje memorables.</p>
+                    </div>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 card-hover transition-all duration-300 flex gap-4">
+                    <div class="flex-shrink-0">
+                        <div class="w-14 h-14 bg-teal-50 rounded-xl flex items-center justify-center text-teal-600">
+                            <i class="fas fa-users-cog text-2xl"></i>
+                        </div>
+                    </div>
+                    <div>
+                        <h4 class="text-xl font-bold text-slate-900 mb-3">Implementación y Capacitación Interna</h4>
+                        <p class="text-slate-600 leading-relaxed">Puesta en marcha de soluciones LMS y formación de tus propios equipos internos para que puedan gestionar y facilitar los programas.</p>
+                    </div>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 card-hover transition-all duration-300 flex gap-4">
+                    <div class="flex-shrink-0">
+                        <div class="w-14 h-14 bg-purple-50 rounded-xl flex items-center justify-center text-purple-600">
+                            <i class="fas fa-chart-pie text-2xl"></i>
+                        </div>
+                    </div>
+                    <div>
+                        <h4 class="text-xl font-bold text-slate-900 mb-3">Análisis y Evaluación de Resultados</h4>
+                        <p class="text-slate-600 leading-relaxed">Medición del impacto. Garantizo la mejora continua de los programas para maximizar el retorno de inversión y el valor del aprendizaje.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience / Clients Section -->
+    <section id="experiencia" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+             <div class="lg:flex lg:gap-16">
+                <div class="lg:w-1/3 mb-10 lg:mb-0">
+                    <h2 class="text-3xl font-bold text-slate-900 mb-6">Trayectoria y Confianza</h2>
+                    <p class="text-slate-600 mb-6 text-lg">He colaborado con organizaciones líderes en el sector público y privado, gestionando desde microaprendizajes hasta complejos ecosistemas de formación.</p>
+                    <div class="p-6 bg-slate-50 rounded-xl border-l-4 border-blue-600">
+                         <p class="italic text-slate-700">"Mi enfoque se centra en la planificación estratégica y en el diseño de soluciones que funcionan."</p>
+                    </div>
+                </div>
+                <div class="lg:w-2/3">
+                    <div class="grid grid-cols-2 md:grid-cols-3 gap-6">
+                        <!-- Client Item -->
+                        <div class="flex flex-col items-center justify-center p-6 border border-slate-100 rounded-xl hover:shadow-md transition-all">
+                            <span class="text-slate-400 text-3xl mb-2"><i class="fas fa-university"></i></span>
+                            <span class="font-bold text-slate-700 text-center">educ.ar</span>
+                            <span class="text-xs text-slate-500 mt-1">Portal Educativo</span>
+                        </div>
+                        <!-- Client Item -->
+                        <div class="flex flex-col items-center justify-center p-6 border border-slate-100 rounded-xl hover:shadow-md transition-all">
+                            <span class="text-slate-400 text-3xl mb-2"><i class="fas fa-building"></i></span>
+                            <span class="font-bold text-slate-700 text-center">Finnegans</span>
+                            <span class="text-xs text-slate-500 mt-1">Software de Gestión</span>
+                        </div>
+                        <!-- Client Item -->
+                        <div class="flex flex-col items-center justify-center p-6 border border-slate-100 rounded-xl hover:shadow-md transition-all">
+                            <span class="text-slate-400 text-3xl mb-2"><i class="fas fa-hands-helping"></i></span>
+                            <span class="font-bold text-slate-700 text-center">FUNDARTOX</span>
+                            <span class="text-xs text-slate-500 mt-1">Fundación</span>
+                        </div>
+                         <!-- Client Item -->
+                         <div class="flex flex-col items-center justify-center p-6 border border-slate-100 rounded-xl hover:shadow-md transition-all">
+                            <span class="text-slate-400 text-3xl mb-2"><i class="fas fa-hospital"></i></span>
+                            <span class="font-bold text-slate-700 text-center">Sanatorio Mater Dei</span>
+                            <span class="text-xs text-slate-500 mt-1">Salud</span>
+                        </div>
+                        <!-- Client Item -->
+                        <div class="flex flex-col items-center justify-center p-6 border border-slate-100 rounded-xl hover:shadow-md transition-all">
+                            <span class="text-slate-400 text-3xl mb-2"><i class="fas fa-flag"></i></span>
+                            <span class="font-bold text-slate-700 text-center">SEDRONAR</span>
+                            <span class="text-xs text-slate-500 mt-1">Gobierno</span>
+                        </div>
+                        <!-- Client Item -->
+                        <div class="flex flex-col items-center justify-center p-6 border border-slate-100 rounded-xl hover:shadow-md transition-all">
+                            <span class="text-slate-400 text-3xl mb-2"><i class="fas fa-briefcase"></i></span>
+                            <span class="font-bold text-slate-700 text-center">ASAEDE</span>
+                            <span class="text-xs text-slate-500 mt-1">Emprendedores</span>
+                        </div>
+                    </div>
+                </div>
+             </div>
+        </div>
+    </section>
+
+    <!-- Academic Background (Short) -->
+    <section class="py-16 bg-slate-900 text-white" id="sobre-mi">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold">Formación Académica Sólida</h2>
+                <p class="text-slate-400 mt-2">Base teórica para soluciones prácticas</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8 text-center">
+                <div>
+                    <div class="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3 class="font-bold text-lg">Posgrado en E-learning</h3>
+                    <p class="text-blue-400 text-sm">UNSAM - Net Learning</p>
+                    <p class="text-slate-400 text-sm mt-2">Diseño e implementación de proyectos</p>
+                </div>
+                <div>
+                    <div class="w-16 h-16 bg-indigo-600 rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <h3 class="font-bold text-lg">Lic. en Investigación Operativa</h3>
+                    <p class="text-indigo-400 text-sm">UCA</p>
+                    <p class="text-slate-400 text-sm mt-2">Analista de Sistemas</p>
+                </div>
+                <div>
+                    <div class="w-16 h-16 bg-teal-600 rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3 class="font-bold text-lg">Psicología Social</h3>
+                    <p class="text-teal-400 text-sm">Escuela Argentina de Psicología Social</p>
+                    <p class="text-slate-400 text-sm mt-2">Especialidad en conducción de equipos</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contacto" class="py-20 bg-slate-50">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-white rounded-2xl shadow-xl overflow-hidden">
+                <div class="grid md:grid-cols-2">
+                    <div class="p-10 bg-blue-600 text-white flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-3xl font-bold mb-4">Hablemos de tu proyecto</h3>
+                            <p class="text-blue-100 mb-8">Si buscas optimizar la formación en tu empresa con soluciones digitales personalizadas, estoy aquí para ayudarte a desarrollar un plan a medida.</p>
+                            
+                            <div class="space-y-4">
+                                <div class="flex items-center gap-3">
+                                    <i class="fas fa-envelope text-blue-300"></i>
+                                    <a href="mailto:clau.ale.aguirre@gmail.com" class="hover:text-white transition-colors">clau.ale.aguirre@gmail.com</a>
+                                </div>
+                                <div class="flex items-center gap-3">
+                                    <i class="fas fa-phone text-blue-300"></i>
+                                    <a href="https://wa.me/5491164932075" class="hover:text-white transition-colors">+54 9 11 64932075</a>
+                                </div>
+                                <div class="flex items-center gap-3">
+                                    <i class="fab fa-linkedin text-blue-300"></i>
+                                    <a href="https://www.linkedin.com/in/claualeaguirre/" target="_blank" class="hover:text-white transition-colors">/in/claualeaguirre</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-10">
+                            <p class="text-sm text-blue-200 opacity-75">Claudia Aguirre © 2025</p>
+                        </div>
+                    </div>
+                    
+                    <div class="p-10">
+                        <form class="space-y-5" onsubmit="event.preventDefault(); alert('Gracias por tu mensaje. Esta es una demostración.');">
+                            <div>
+                                <label for="name" class="block text-sm font-medium text-slate-700 mb-1">Nombre</label>
+                                <input type="text" id="name" class="w-full px-4 py-2 rounded-lg border border-slate-300 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all" placeholder="Tu nombre">
+                            </div>
+                            <div>
+                                <label for="email" class="block text-sm font-medium text-slate-700 mb-1">Email</label>
+                                <input type="email" id="email" class="w-full px-4 py-2 rounded-lg border border-slate-300 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all" placeholder="tu@email.com">
+                            </div>
+                            <div>
+                                <label for="message" class="block text-sm font-medium text-slate-700 mb-1">Mensaje</label>
+                                <textarea id="message" rows="4" class="w-full px-4 py-2 rounded-lg border border-slate-300 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all" placeholder="Cuéntame sobre tus necesidades de capacitación..."></textarea>
+                            </div>
+                            <button type="submit" class="w-full bg-slate-900 text-white font-bold py-3 rounded-lg hover:bg-slate-800 transition-all transform hover:-translate-y-1 shadow-md">
+                                Enviar Mensaje
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white py-8 border-t border-slate-100">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <p class="text-slate-500 text-sm">Diseñado basado en el perfil profesional de Claudia Aguirre.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+        
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                menu.classList.add('hidden'); // Close mobile menu on click
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 </body>
 </html>
