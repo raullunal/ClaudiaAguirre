@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Claudia Aguirre | Especialista en E-learning</title>
+    <meta name="description" content="Portafolio y servicios de Claudia Aguirre, especialista en E-learning con más de 20 años de experiencia en formación virtual y capacitación corporativa.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Merriweather:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3, h4 { font-family: 'Inter', sans-serif; }
+        .gradient-text { background-clip: text; -webkit-background-clip: text; color: transparent; background-image: linear-gradient(to right, #60a5fa, #818cf8); }
+        .card-hover:hover { transform: translateY(-5px); box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.5), 0 10px 10px -5px rgba(0, 0, 0, 0.4); }
+        .stat-card { transition: all 0.3s ease; }
+        .stat-card:hover { transform: scale(1.02); background-color: #1e293b; }
+    </style>
+</head>
+<body class="bg-slate-900 text-slate-300 antialiased selection:bg-blue-500 selection:text-white">
+
+    <!-- Navigation -->
+    <nav class="bg-slate-900/90 backdrop-blur-md border-b border-slate-800 shadow-lg fixed w-full z-50 transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <div class="flex-shrink-0 flex items-center gap-3">
+                    <div class="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold text-xl shadow-lg shadow-blue-500/30">CA</div>
+                    <span class="font-bold text-xl tracking-tight text-white">Claudia Aguirre</span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#inicio" class="text-slate-300 hover:text-blue-400 font-medium transition-colors">Inicio</a>
+                    <a href="#servicios" class="text-slate-300 hover:text-blue-400 font-medium transition-colors">Servicios</a>
+                    <a href="#experiencia" class="text-slate-300 hover:text-blue-400 font-medium transition-colors">Experiencia</a>
+                    <a href="#logros" class="text-slate-300 hover:text-blue-400 font-medium transition-colors">Impacto</a>
+                    <a href="#contacto" class="px-5 py-2.5 rounded-full bg-blue-600 text-white font-semibold hover:bg-blue-500 transition-all shadow-lg shadow-blue-600/30 transform hover:-translate-y-0.5">Contactar</a>
+                </div>
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-slate-300 hover:text-white focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-slate-800 border-t border-slate-700 absolute w-full shadow-xl">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#inicio" class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:text-white hover:bg-slate-700">Inicio</a>
+                <a href="#servicios" class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:text-white hover:bg-slate-700">Servicios</a>
+                <a href="#experiencia" class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:text-white hover:bg-slate-700">Experiencia</a>
+                <a href="#logros" class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:text-white hover:bg-slate-700">Impacto</a>
+                <a href="#contacto" class="block px-3 py-2 rounded-md text-base font-medium text-blue-400 font-semibold">Contactar</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="pt-28 pb-20 lg:pt-36 lg:pb-28 relative overflow-hidden">
+        <!-- Background Effects -->
+        <div class="absolute top-0 left-0 w-full h-full overflow-hidden -z-10 pointer-events-none">
+             <div class="absolute -top-[20%] -right-[10%] w-[50%] h-[50%] rounded-full bg-blue-600/20 blur-[100px]"></div>
+             <div class="absolute top-[40%] -left-[10%] w-[40%] h-[40%] rounded-full bg-indigo-600/10 blur-[100px]"></div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:grid lg:grid-cols-12 lg:gap-16 items-center">
+                <div class="lg:col-span-7 text-center lg:text-left mb-12 lg:mb-0">
+                    <div class="inline-flex items-center px-3 py-1 rounded-full bg-slate-800/50 text-blue-400 text-sm font-semibold mb-6 border border-slate-700 backdrop-blur-sm">
+                        <span class="w-2 h-2 rounded-full bg-blue-500 mr-2 animate-pulse"></span> Consultoría Estratégica en Formación
+                    </div>
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white leading-tight mb-6">
+                        Especialista en <span class="gradient-text">E-learning</span> y Gestión de Proyectos
+                    </h1>
+                    <p class="text-lg sm:text-xl text-slate-400 mb-8 leading-relaxed max-w-2xl mx-auto lg:mx-0">
+                        Más de 20 años diseñando soluciones de capacitación ágiles y escalables. Desde la planificación estratégica hasta la implementación de microaprendizajes y evaluación de resultados.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                        <a href="#experiencia" class="px-8 py-4 rounded-lg bg-blue-600 text-white font-semibold text-lg hover:bg-blue-500 transition-all shadow-lg shadow-blue-600/20 text-center">
+                            Ver Proyectos
+                        </a>
+                        <a href="#contacto" class="px-8 py-4 rounded-lg bg-slate-800 text-white border border-slate-700 font-semibold text-lg hover:bg-slate-700 hover:border-slate-600 transition-all text-center shadow-md">
+                            Agendar Consulta
+                        </a>
+                    </div>
+                </div>
+                <div class="lg:col-span-5 relative">
+                    <div class="relative rounded-2xl overflow-hidden shadow-2xl shadow-blue-900/20 border-4 border-slate-800 rotate-2 hover:rotate-0 transition-transform duration-500">
+                         <!-- Placeholder image -->
+                        <img src="assets/images/img_1_87.png?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="E-learning Strategy" class="w-full h-auto object-cover aspect-[4/5] opacity-90 hover:opacity-100 transition-opacity">
+                         <div class="absolute bottom-0 left-0 w-full bg-gradient-to-t from-slate-900 to-transparent p-8">
+                            <p class="text-white font-bold text-xl">Claudia Aguirre</p>
+                            <p class="text-blue-400">Especialista en E-learning</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements / Impact Section -->
+    <section id="logros" class="py-16 bg-slate-800/50 border-y border-slate-800 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-white">Impacto en Cifras</h2>
+                <p class="text-slate-400 mt-2">Resultados tangibles de la gestión en proyectos de gran escala.</p>
+            </div>
+            
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <!-- Stat 1 -->
+                <div class="p-6 rounded-2xl bg-slate-800 border border-slate-700 text-center stat-card shadow-lg">
+                    <div class="text-4xl font-extrabold text-blue-400 mb-2">+300k</div>
+                    <p class="text-sm font-bold text-slate-300 uppercase tracking-wide">Destinatarios</p>
+                    <p class="text-xs text-slate-500 mt-1">Docentes y profesionales</p>
+                </div>
+                <!-- Stat 2 -->
+                <div class="p-6 rounded-2xl bg-slate-800 border border-slate-700 text-center stat-card shadow-lg">
+                    <div class="text-4xl font-extrabold text-indigo-400 mb-2">+80%</div>
+                    <p class="text-sm font-bold text-slate-300 uppercase tracking-wide">Finalización</p>
+                    <p class="text-xs text-slate-500 mt-1">En cursos pagos</p>
+                </div>
+                <!-- Stat 3 -->
+                <div class="p-6 rounded-2xl bg-slate-800 border border-slate-700 text-center stat-card shadow-lg">
+                    <div class="text-4xl font-extrabold text-teal-400 mb-2">+200</div>
+                    <p class="text-sm font-bold text-slate-300 uppercase tracking-wide">Expertos</p>
+                    <p class="text-xs text-slate-500 mt-1">Gestionados en equipos</p>
+                </div>
+                <!-- Stat 4 -->
+                <div class="p-6 rounded-2xl bg-slate-800 border border-slate-700 text-center stat-card shadow-lg">
+                    <div class="text-4xl font-extrabold text-purple-400 mb-2">+50</div>
+                    <p class="text-sm font-bold text-slate-300 uppercase tracking-wide">Microcursos</p>
+                    <p class="text-xs text-slate-500 mt-1">Píldoras de aprendizaje</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="servicios" class="py-20 bg-slate-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-blue-500 font-semibold tracking-wide uppercase text-sm">Mis Servicios</h2>
+                <h3 class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-white sm:text-4xl">Soluciones Integrales de Formación</h3>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-slate-800 p-8 rounded-2xl shadow-lg border border-slate-700 card-hover transition-all duration-300 flex gap-4">
+                    <div class="flex-shrink-0">
+                        <div class="w-14 h-14 bg-blue-900/30 rounded-xl flex items-center justify-center text-blue-400 border border-blue-800/50">
+                            <i class="fas fa-compass text-2xl"></i>
+                        </div>
+                    </div>
+                    <div>
+                        <h4 class="text-xl font-bold text-white mb-3">Diseño Estratégico y Diagnóstico</h4>
+                        <p class="text-slate-400 leading-relaxed">Alineación de la capacitación digital con los objetivos de negocio. Relevamiento de necesidades y diseño de propuestas a medida.</p>
+                    </div>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="bg-slate-800 p-8 rounded-2xl shadow-lg border border-slate-700 card-hover transition-all duration-300 flex gap-4">
+                    <div class="flex-shrink-0">
+                        <div class="w-14 h-14 bg-indigo-900/30 rounded-xl flex items-center justify-center text-indigo-400 border border-indigo-800/50">
+                            <i class="fas fa-users-cog text-2xl"></i>
+                        </div>
+                    </div>
+                    <div>
+                        <h4 class="text-xl font-bold text-white mb-3">Gestión Integral de Proyectos</h4>
+                        <p class="text-slate-400 leading-relaxed">Planificación estratégica y conducción de equipos multidisciplinarios (contenidistas, tutores, diseñadores) para crear experiencias efectivas.</p>
+                    </div>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="bg-slate-800 p-8 rounded-2xl shadow-lg border border-slate-700 card-hover transition-all duration-300 flex gap-4">
+                    <div class="flex-shrink-0">
+                        <div class="w-14 h-14 bg-teal-900/30 rounded-xl flex items-center justify-center text-teal-400 border border-teal-800/50">
+                            <i class="fas fa-laptop-code text-2xl"></i>
+                        </div>
+                    </div>
+                    <div>
+                        <h4 class="text-xl font-bold text-white mb-3">Microlearning y Recursos Digitales</h4>
+                        <p class="text-slate-400 leading-relaxed">Diseño y desarrollo de microaprendizajes, píldoras autogestionadas y simulaciones utilizando herramientas de autor.</p>
+                    </div>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="bg-slate-800 p-8 rounded-2xl shadow-lg border border-slate-700 card-hover transition-all duration-300 flex gap-4">
+                    <div class="flex-shrink-0">
+                        <div class="w-14 h-14 bg-purple-900/30 rounded-xl flex items-center justify-center text-purple-400 border border-purple-800/50">
+                            <i class="fas fa-chart-line text-2xl"></i>
+                        </div>
+                    </div>
+                    <div>
+                        <h4 class="text-xl font-bold text-white mb-3">Consultoría y Optimización</h4>
+                        <p class="text-slate-400 leading-relaxed">Acompañamiento a equipos internos, soporte de roles, informes de gestión y mejora continua basada en análisis de resultados.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Detailed Experience Section -->
+    <section id="experiencia" class="py-20 bg-slate-800/30">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-white mb-12 text-center">Casos de Éxito y Ejes de Trabajo</h2>
+            
+            <div class="space-y-12">
+                <!-- Case Study 1: Large Scale Projects -->
+                <div class="bg-slate-800 rounded-2xl p-8 border border-slate-700 shadow-lg">
+                    <div class="md:flex md:justify-between md:items-start gap-8">
+                        <div class="md:w-1/3 mb-6 md:mb-0">
+                            <div class="flex items-center gap-3 mb-4">
+                                <div class="p-3 bg-blue-900/50 rounded-lg text-blue-300 border border-blue-800"><i class="fas fa-rocket"></i></div>
+                                <h3 class="text-xl font-bold text-white">Diseño y Puesta en Marcha</h3>
+                            </div>
+                            <p class="text-slate-400 mb-4">Gestión de proyectos de gran envergadura con cobertura nacional. Definición de objetivos, formación de equipos y monitoreo.</p>
+                            <ul class="space-y-2 text-sm text-slate-300">
+                                <li class="flex items-start gap-2"><i class="fas fa-check text-green-500 mt-1"></i> <span>+300.000 Destinatarios alcanzados</span></li>
+                                <li class="flex items-start gap-2"><i class="fas fa-check text-green-500 mt-1"></i> <span>+200 Expertos coordinados</span></li>
+                                <li class="flex items-start gap-2"><i class="fas fa-check text-green-500 mt-1"></i> <span>Aprendizaje flexible y variado</span></li>
+                            </ul>
+                        </div>
+                        <div class="md:w-2/3 grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <!-- Client: Educ.ar -->
+                            <a href="https://www.educ.ar/" target="_blank" class="group bg-slate-900 p-4 rounded-xl border border-slate-700 hover:border-blue-500 hover:bg-slate-800 hover:shadow-lg transition-all flex items-center gap-4">
+                                <div class="w-10 h-10 bg-slate-800 rounded-full flex items-center justify-center text-slate-400 group-hover:text-blue-400 group-hover:bg-blue-900/30 transition-colors">
+                                    <i class="fas fa-university"></i>
+                                </div>
+                                <div>
+                                    <span class="block font-bold text-slate-200 group-hover:text-blue-300">educ.ar</span>
+                                    <span class="text-xs text-slate-500 group-hover:text-slate-400">Portal Educativo Nacional</span>
+                                </div>
+                                <i class="fas fa-external-link-alt text-slate-600 ml-auto text-xs opacity-0 group-hover:opacity-100 group-hover:text-blue-400"></i>
+                            </a>
+                             <!-- Client: Sedronar -->
+                             <a href="https://www.argentina.gob.ar/sedronar" target="_blank" class="group bg-slate-900 p-4 rounded-xl border border-slate-700 hover:border-blue-500 hover:bg-slate-800 hover:shadow-lg transition-all flex items-center gap-4">
+                                <div class="w-10 h-10 bg-slate-800 rounded-full flex items-center justify-center text-slate-400 group-hover:text-blue-400 group-hover:bg-blue-900/30 transition-colors">
+                                    <i class="fas fa-flag"></i>
+                                </div>
+                                <div>
+                                    <span class="block font-bold text-slate-200 group-hover:text-blue-300">Sedronar</span>
+                                    <span class="text-xs text-slate-500 group-hover:text-slate-400">Secretaría de Políticas Integrales</span>
+                                </div>
+                                <i class="fas fa-external-link-alt text-slate-600 ml-auto text-xs opacity-0 group-hover:opacity-100 group-hover:text-blue-400"></i>
+                            </a>
+                            <!-- Client: Hospital Bonaparte -->
+                            <a href="https://www.argentina.gob.ar/salud/hospitalbonaparte" target="_blank" class="group bg-slate-900 p-4 rounded-xl border border-slate-700 hover:border-blue-500 hover:bg-slate-800 hover:shadow-lg transition-all flex items-center gap-4">
+                                <div class="w-10 h-10 bg-slate-800 rounded-full flex items-center justify-center text-slate-400 group-hover:text-blue-400 group-hover:bg-blue-900/30 transition-colors">
+                                    <i class="fas fa-hospital-alt"></i>
+                                </div>
+                                <div>
+                                    <span class="block font-bold text-slate-200 group-hover:text-blue-300">Hosp. Laura Bonaparte</span>
+                                    <span class="text-xs text-slate-500 group-hover:text-slate-400">Hospital Nacional en Red</span>
+                                </div>
+                                <i class="fas fa-external-link-alt text-slate-600 ml-auto text-xs opacity-0 group-hover:opacity-100 group-hover:text-blue-400"></i>
+                            </a>
+                            <!-- Client: Fundartox -->
+                            <a href="https://fundartox.org/" target="_blank" class="group bg-slate-900 p-4 rounded-xl border border-slate-700 hover:border-blue-500 hover:bg-slate-800 hover:shadow-lg transition-all flex items-center gap-4">
+                                <div class="w-10 h-10 bg-slate-800 rounded-full flex items-center justify-center text-slate-400 group-hover:text-blue-400 group-hover:bg-blue-900/30 transition-colors">
+                                    <i class="fas fa-hands-helping"></i>
+                                </div>
+                                <div>
+                                    <span class="block font-bold text-slate-200 group-hover:text-blue-300">FUNDARTOX</span>
+                                    <span class="text-xs text-slate-500 group-hover:text-slate-400">Fundación Niños Sin Tóxicos</span>
+                                </div>
+                                <i class="fas fa-external-link-alt text-slate-600 ml-auto text-xs opacity-0 group-hover:opacity-100 group-hover:text-blue-400"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Case Study 2: Advisory -->
+                <div class="bg-slate-800 rounded-2xl p-8 border border-slate-700 shadow-lg">
+                    <div class="md:flex md:justify-between md:items-start gap-8">
+                        <div class="md:w-1/3 mb-6 md:mb-0">
+                            <div class="flex items-center gap-3 mb-4">
+                                <div class="p-3 bg-indigo-900/50 rounded-lg text-indigo-300 border border-indigo-800"><i class="fas fa-briefcase"></i></div>
+                                <h3 class="text-xl font-bold text-white">Asesoramiento Corporativo</h3>
+                            </div>
+                            <p class="text-slate-400 mb-4">Optimización de la gestión de formación virtual, acompañamiento de equipos y enfoque personalizado.</p>
+                            <ul class="space-y-2 text-sm text-slate-300">
+                                <li class="flex items-start gap-2"><i class="fas fa-check text-green-500 mt-1"></i> <span>+2.000 Destinatarios</span></li>
+                                <li class="flex items-start gap-2"><i class="fas fa-check text-green-500 mt-1"></i> <span>Optimización de recursos</span></li>
+                                <li class="flex items-start gap-2"><i class="fas fa-check text-green-500 mt-1"></i> <span>Capacitación especializada (técnicos, contadores)</span></li>
+                            </ul>
+                        </div>
+                        <div class="md:w-2/3 grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <!-- Client: Finnegans -->
+                            <a href="https://finneg.com/ar/" target="_blank" class="group bg-slate-900 p-4 rounded-xl border border-slate-700 hover:border-indigo-500 hover:bg-slate-800 hover:shadow-lg transition-all flex items-center gap-4">
+                                <div class="w-10 h-10 bg-slate-800 rounded-full flex items-center justify-center text-slate-400 group-hover:text-indigo-400 group-hover:bg-indigo-900/30 transition-colors">
+                                    <i class="fas fa-building"></i>
+                                </div>
+                                <div>
+                                    <span class="block font-bold text-slate-200 group-hover:text-indigo-300">Finnegans</span>
+                                    <span class="text-xs text-slate-500 group-hover:text-slate-400">Gestión & Software</span>
+                                </div>
+                                <i class="fas fa-external-link-alt text-slate-600 ml-auto text-xs opacity-0 group-hover:opacity-100 group-hover:text-indigo-400"></i>
+                            </a>
+                            <!-- Client: Mater Dei -->
+                            <a href="https://www.sanatoriomaterdei.com.ar/" target="_blank" class="group bg-slate-900 p-4 rounded-xl border border-slate-700 hover:border-indigo-500 hover:bg-slate-800 hover:shadow-lg transition-all flex items-center gap-4">
+                                <div class="w-10 h-10 bg-slate-800 rounded-full flex items-center justify-center text-slate-400 group-hover:text-indigo-400 group-hover:bg-indigo-900/30 transition-colors">
+                                    <i class="fas fa-clinic-medical"></i>
+                                </div>
+                                <div>
+                                    <span class="block font-bold text-slate-200 group-hover:text-indigo-300">Sanatorio Mater Dei</span>
+                                    <span class="text-xs text-slate-500 group-hover:text-slate-400">Institución de Salud</span>
+                                </div>
+                                <i class="fas fa-external-link-alt text-slate-600 ml-auto text-xs opacity-0 group-hover:opacity-100 group-hover:text-indigo-400"></i>
+                            </a>
+                            <!-- Client: Hermanas de María -->
+                            <div class="bg-slate-900 p-4 rounded-xl border border-slate-700 flex items-center gap-4 opacity-70 hover:opacity-100 transition-opacity">
+                                <div class="w-10 h-10 bg-slate-800 rounded-full flex items-center justify-center text-slate-500">
+                                    <i class="fas fa-church"></i>
+                                </div>
+                                <div>
+                                    <span class="block font-bold text-slate-300">Hermanas de María</span>
+                                    <span class="text-xs text-slate-500">de Schönstatt</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                 <!-- Case Study 3: Microlearning -->
+                 <div class="bg-slate-800 rounded-2xl p-8 border border-slate-700 shadow-lg">
+                    <div class="md:flex md:justify-between md:items-start gap-8">
+                        <div class="md:w-1/3 mb-6 md:mb-0">
+                            <div class="flex items-center gap-3 mb-4">
+                                <div class="p-3 bg-teal-900/50 rounded-lg text-teal-300 border border-teal-800"><i class="fas fa-mobile-alt"></i></div>
+                                <h3 class="text-xl font-bold text-white">Microaprendizajes</h3>
+                            </div>
+                            <p class="text-slate-400 mb-4">Creación de cursos breves y autogestionados. Diseño interactivo, implementación con herramientas de autor y evaluación.</p>
+                            <ul class="space-y-2 text-sm text-slate-300">
+                                <li class="flex items-start gap-2"><i class="fas fa-check text-green-500 mt-1"></i> <span>+50 Píldoras de aprendizaje</span></li>
+                                <li class="flex items-start gap-2"><i class="fas fa-check text-green-500 mt-1"></i> <span>Alta valoración en calidad</span></li>
+                                <li class="flex items-start gap-2"><i class="fas fa-check text-green-500 mt-1"></i> <span>+50% Finalización de inscriptos</span></li>
+                            </ul>
+                        </div>
+                        <div class="md:w-2/3 grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <!-- Client: Fundartox -->
+                            <a href="https://fundartox.org/" target="_blank" class="group bg-slate-900 p-4 rounded-xl border border-slate-700 hover:border-teal-500 hover:bg-slate-800 hover:shadow-lg transition-all flex items-center gap-4">
+                                <div class="w-10 h-10 bg-slate-800 rounded-full flex items-center justify-center text-slate-400 group-hover:text-teal-400 group-hover:bg-teal-900/30 transition-colors">
+                                    <i class="fas fa-hands-helping"></i>
+                                </div>
+                                <div>
+                                    <span class="block font-bold text-slate-200 group-hover:text-teal-300">FUNDARTOX</span>
+                                    <span class="text-xs text-slate-500 group-hover:text-slate-400">Fundación Niños Sin Tóxicos</span>
+                                </div>
+                                <i class="fas fa-external-link-alt text-slate-600 ml-auto text-xs opacity-0 group-hover:opacity-100 group-hover:text-teal-400"></i>
+                            </a>
+                            <!-- Client: Peregrina/Forespil -->
+                            <a href="https://www.asocperegrina.org" target="_blank" class="group bg-slate-900 p-4 rounded-xl border border-slate-700 hover:border-teal-500 hover:bg-slate-800 hover:shadow-lg transition-all flex items-center gap-4">
+
+                            <div class="bg-slate-900 p-4 rounded-xl border border-slate-700 flex items-center gap-4 opacity-70 hover:opacity-100 transition-opacity">
+                                <div class="w-10 h-10 bg-slate-800 rounded-full flex items-center justify-center text-slate-500">
+                                    <i class="fas fa-leaf"></i>
+                                </div>
+                                <div>
+                                    <span class="block font-bold text-slate-300">Peregrina / Forespil</span>
+                                    <span class="text-xs text-slate-500">Asociación Civil</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Extra: Coordination -->
+                <div class="bg-slate-800 rounded-2xl p-6 border border-slate-700 hover:shadow-lg hover:border-purple-500/30 transition-all">
+                    <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+                        <div class="flex items-center gap-4">
+                             <div class="w-12 h-12 bg-purple-900/30 rounded-full flex items-center justify-center text-purple-400 text-xl border border-purple-800/50">
+                                <i class="fas fa-microphone-alt"></i>
+                             </div>
+                             <div>
+                                 <h4 class="text-lg font-bold text-white">Business Talk & Tools</h4>
+                                 <p class="text-sm text-slate-400">Coordinación, moderación y gestión de ponentes para la difusión de conocimiento empresarial.</p>
+                             </div>
+                        </div>
+                        <a href="https://asaede.org/" target="_blank" class="px-6 py-2 bg-slate-900 border border-slate-600 text-slate-300 rounded-lg hover:bg-slate-800 hover:text-white hover:border-blue-500 transition-colors flex items-center gap-2 font-medium">
+                            <i class="fas fa-link"></i> ASAEDE
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Academic Background -->
+    <section class="py-16 bg-black border-t border-slate-800" id="sobre-mi">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-white">Formación Académica Sólida</h2>
+                <p class="text-slate-500 mt-2">Base teórica para soluciones prácticas</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8 text-center">
+                <div>
+                    <div class="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold shadow-lg shadow-blue-600/30 text-white">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3 class="font-bold text-lg text-white">Posgrado en E-learning</h3>
+                    <p class="text-blue-400 text-sm">UNSAM - Net Learning</p>
+                    <p class="text-slate-500 text-sm mt-2">Diseño e implementación de proyectos</p>
+                </div>
+                <div>
+                    <div class="w-16 h-16 bg-indigo-600 rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold shadow-lg shadow-indigo-600/30 text-white">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <h3 class="font-bold text-lg text-white">Lic. en Investigación Operativa</h3>
+                    <p class="text-indigo-400 text-sm">UCA</p>
+                    <p class="text-slate-500 text-sm mt-2">Analista de Sistemas</p>
+                </div>
+                <div>
+                    <div class="w-16 h-16 bg-teal-600 rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold shadow-lg shadow-teal-600/30 text-white">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3 class="font-bold text-lg text-white">Psicología Social</h3>
+                    <p class="text-teal-400 text-sm">Escuela Argentina de Psicología Social</p>
+                    <p class="text-slate-500 text-sm mt-2">Especialidad en conducción de equipos</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contacto" class="py-20 bg-slate-900 border-t border-slate-800">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-slate-800 rounded-2xl shadow-2xl border border-slate-700 overflow-hidden">
+                <div class="grid md:grid-cols-2">
+                    <div class="p-10 bg-blue-700 text-white flex flex-col justify-between relative overflow-hidden">
+                        <!-- Deco background -->
+                        <div class="absolute top-0 right-0 w-32 h-32 bg-blue-600 rounded-full -mr-10 -mt-10 opacity-50 blur-2xl"></div>
+                        <div class="absolute bottom-0 left-0 w-32 h-32 bg-blue-800 rounded-full -ml-10 -mb-10 opacity-50 blur-2xl"></div>
+                        
+                        <div class="relative z-10">
+                            <h3 class="text-3xl font-bold mb-4">Hablemos de tu proyecto</h3>
+                            <p class="text-blue-100 mb-8">Si buscas optimizar la formación en tu empresa con soluciones digitales personalizadas, estoy aquí para ayudarte a desarrollar un plan a medida.</p>
+                            
+                            <div class="space-y-4">
+                                <div class="flex items-center gap-3">
+                                    <i class="fas fa-envelope text-blue-300"></i>
+                                    <a href="mailto:clau.ale.aguirre@gmail.com" class="hover:text-white transition-colors">clau.ale.aguirre@gmail.com</a>
+                                </div>
+                                <div class="flex items-center gap-3">
+                                    <i class="fas fa-phone text-blue-300"></i>
+                                    <a href="https://wa.me/5491164932075" class="hover:text-white transition-colors">+54 9 11 64932075</a>
+                                </div>
+                                <div class="flex items-center gap-3">
+                                    <i class="fab fa-linkedin text-blue-300"></i>
+                                    <a href="https://www.linkedin.com/in/claualeaguirre/" target="_blank" class="hover:text-white transition-colors">/in/claualeaguirre</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-10 relative z-10">
+                            <p class="text-sm text-blue-200 opacity-75">Claudia Aguirre © 2025</p>
+                        </div>
+                    </div>
+                    
+                    <div class="p-10 bg-slate-800">
+                        <form class="space-y-5" onsubmit="event.preventDefault(); alert('Gracias por tu mensaje. Esta es una demostración.');">
+                            <div>
+                                <label for="name" class="block text-sm font-medium text-slate-300 mb-1">Nombre</label>
+                                <input type="text" id="name" class="w-full px-4 py-2 rounded-lg bg-slate-700 border border-slate-600 text-white placeholder-slate-400 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all" placeholder="Tu nombre">
+                            </div>
+                            <div>
+                                <label for="email" class="block text-sm font-medium text-slate-300 mb-1">Email</label>
+                                <input type="email" id="email" class="w-full px-4 py-2 rounded-lg bg-slate-700 border border-slate-600 text-white placeholder-slate-400 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all" placeholder="tu@email.com">
+                            </div>
+                            <div>
+                                <label for="message" class="block text-sm font-medium text-slate-300 mb-1">Mensaje</label>
+                                <textarea id="message" rows="4" class="w-full px-4 py-2 rounded-lg bg-slate-700 border border-slate-600 text-white placeholder-slate-400 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all" placeholder="Cuéntame sobre tus necesidades de capacitación..."></textarea>
+                            </div>
+                            <button type="submit" class="w-full bg-white text-slate-900 font-bold py-3 rounded-lg hover:bg-slate-200 transition-all transform hover:-translate-y-1 shadow-md">
+                                Enviar Mensaje
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 py-8 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <p class="text-slate-600 text-sm">Diseñado basado en el perfil profesional de Claudia Aguirre.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+        
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                menu.classList.add('hidden'); // Close mobile menu on click
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
